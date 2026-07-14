@@ -1,0 +1,6 @@
+Web Development?
+Building a Web Applications
+2 Branches:
+Frontend - HTML, (5, 15, Bootstrap + Bonus (React)
+Backend -
+Java - Basics, Advance, COPs, Spring * MysQl Python - Basics, Advance, COPs, Django + MySQL ML - Basics, Advance, Algorithes, Model Training

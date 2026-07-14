@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> function and block scope</h1> 
+   <P> 1 block scope-{}- let and const</P>
+   <P> 2 .function scope</P>
+   <script>
+    function fun(){
+        let a=100;
+        var b= 300;
+        const c =500;
+        if(true){
+            let a=300;
+            var b= 100;
+            const c =500;
+            console.log("inside vlaves:",a,b,c);
+        }
+        console.log("outside values:",a,b,c);
+    }
+    fun();
+   </script>
+   <script>
+    const arr=[1,2,3,3,4,5];
+    console.log("array:",arr)
+    arr.push(6);
+    console.log("push:",arr);
+
+    
+    const ele=arr.pop();
+    console.log("popped element:",ele);
+    console.log("pop:",arr)
+
+ const ele1=arr.shift();
+    console.log("shifted element:",ele1);
+    console.log("shift:",arr)
+    arr.unshift(0);
+    console.log("unshift:",arr);
+
+    const index = arr.indexOf(5);
+    console.log("index is :",index);
+    //for each
+    const arr1= [1,2,3, true,"world",{name:"pavan"}];
+    arr1.forEach((ele,index,arr2)=>{
+        console.log("Ele:",ele,"index:",index,"array:",arr2);
+    });
+    //map
+    const arr2 =[2,4,6,8,10];
+    const arr3=arr2.map((ele)=>{
+        return ele*ele;
+    })
+    console.log("array3:",arr3)
+    //filter
+    const arr4=[1,2,3,4,5,6,7,8,9,10];
+    const arr5=arr4.filter((ele)=>{
+        return ele % 2== 0;
+    })
+    console.log("array3:",arr5);
+    //reduce
+    const res6=arr4.reduce((pre,cur)=>{
+        return pre+cur;
+    },10);
+    console.log("res6:",res6)
+   </script>
+</body>
+</html>
